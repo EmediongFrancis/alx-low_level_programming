@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  * main - Entry block
  * Description: prints holberton on new line
@@ -6,9 +6,15 @@
  */
 int main(void)
 {
-int c;
-c = "Holberton";
+char c[10] = "Holberton";
 
-putchar(c);
+int i = 0;
+
+while (i < 9)
+	{
+_putchar(c[i]);
+i++;
+	}
+_putchar('\n');
 return (0);
 }
