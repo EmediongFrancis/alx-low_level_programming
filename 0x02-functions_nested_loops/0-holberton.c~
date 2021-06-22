@@ -1,0 +1,14 @@
+#include <stdio.h>
+/**
+ * Script to print "Holberton"
+ *
+ * Return is always 0
+ **/
+int main(void)
+{
+int c;
+c = "Holberton";
+
+putchar(c);
+return (0);
+}
