@@ -5,11 +5,19 @@
  * @dest:  destination string.
  * @src:  source string.
  *
- * Return: Always 0.
+ * Return: dest if successful.
  */
 
 char *_strcat(char *dest, char *src);
-
-*_strcat(char *dest, char *src);
-
-printf("%s/n", *dest);
+{
+  int a;
+  int i;
+  a = -1;
+  for (i = 0; dest[i] != '\0'; i++);
+  do {
+    a++;
+    dest[i] = src[a];
+    i++;
+  } while (src[a] != '\0');
+ return (dest);
+}
